@@ -1,3 +1,3 @@
-import pandas as pd
-a=pd.Series([10,20,30])
-print(a)
+import pandas as pd 
+a=pd.Series([10,20,30,40,50])
+print(a.sum)
