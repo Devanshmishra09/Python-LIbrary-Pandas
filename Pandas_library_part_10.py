@@ -32,7 +32,7 @@ print(a.describe())
 import pandas as pd 
 a=pd.DataFrame({
     "Name":["Devansh","shivam","shubhu","suraj"],
-    "Course":["Data Analytics","BCA","B.tech","M.tech"],e
+    "Course":["Data Analytics","BCA","B.tech","M.tech"]
 })
 print(a)
 print(a.describe())
