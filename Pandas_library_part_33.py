@@ -6,7 +6,7 @@
 import pandas as pd 
 a=pd.read_excel("Sales_Record.xlsx")
 print(a)
-b=a["total_Sales"]>1000
+b=a["Total_Sales"]>1000
 print(b)
 
 
