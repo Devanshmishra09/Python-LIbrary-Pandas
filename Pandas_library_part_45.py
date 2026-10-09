@@ -49,5 +49,5 @@ print(b)
 import pandas as pd 
 a=pd.read_excel("Students_Marksheet.xlsx")
 print(a)
-b=a.iloc[5,[1,3]]
+b=a.iloc[5],["Name","City"]
 print(b)
