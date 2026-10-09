@@ -21,6 +21,7 @@ print(a)
 import pandas as pd 
 a=pd.read_excel("Students_Marksheet.xlsx")
 print(a)
+a["Scholarship"]="Rejected"
 b=a.loc[a["Attendance"]>85,"Scholarship"]="Verified"
 print(b)
 print(a)
