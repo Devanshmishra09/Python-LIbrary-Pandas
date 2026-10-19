@@ -1,0 +1,6 @@
+timestamp,location,sensor_reading,status,date_only,time_only,bounded_readings,is_local
+2026-10-15 08:00:00,Lucknow,120,Active,2026-10-15,08:00:00,,Local
+2026-10-16 08:00:00,Delhi,85,Active,2026-10-16,08:00:00,85.0,Remote
+2026-10-17 08:00:00,Mumbai,150,Inactive,2026-10-17,08:00:00,,Remote
+2026-10-18 08:00:00,Lucknow,65,Active,2026-10-18,08:00:00,65.0,Local
+2026-10-19 08:00:00,Bangalore,110,Inactive,2026-10-19,08:00:00,110.0,Remote
