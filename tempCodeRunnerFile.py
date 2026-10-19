@@ -1,13 +1,13 @@
-import pandas as pd 
-a=pd.read_excel("Date_Time_Practice_set.xlsx")
-a['Joining_Date'] = pd.to_datetime(a['Joining_Date'])
-b=a["Joining_Date"].dt.year
-c=a["Joining_Date"].dt.month
-d=a["Joining_Date"].dt.day
-e=a["Joining_Date"].dt.day_name()
-f=a["Joining_Date"].dt.month_name()
-print(b)
-print(c)
-print(d)    
-print(e)
-print(f)
+import pandas as pd
+
+data = {
+    "city": ["Lucknow", "Delhi", "Mumbai", "Lucknow"],
+    "aqi_score": [85, 160, 92, 210]
+}
+df = pd.DataFrame(data)
+
+# Goal: Keep AQI scores if they are healthy/moderate (<= 100).
+# Anything above 100 gets replaced by a fallback value like -1 or None.
+df["capped_aqi"] = df["aqi_score"].where(df["aqi_score"] <= 100, other=-1)
+
+print(df)
